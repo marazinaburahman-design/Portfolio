@@ -35,7 +35,7 @@ export default function About() {
                 <p className="text-slate-700"><span className="text-indigo-700 font-semibold">Location:</span> <span className="text-slate-600">Kattankudy, Sri Lanka</span></p>
               </div>
               <motion.a
-                href="/resume/Abdur_Rahman_Resume.pdf"
+                href="/resume/Abdur_Rahman_Resume_.pdf"
                 download="Abdur_Rahman_Resume.pdf"
                 className="inline-block mt-8 bg-indigo-700 text-white font-semibold px-7 py-3 rounded-lg shadow-md"
                 whileHover={{ scale: 1.06, y: -3 }}
