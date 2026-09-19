@@ -36,7 +36,7 @@ export default function About() {
               </div>
               <motion.a
                 href="/resume/Abdur_Rahman_Resume.pdf"
-                download="Abdur_Rahman_Resume.pdf"
+                download
                 className="inline-block mt-8 bg-indigo-700 text-white font-semibold px-7 py-3 rounded-lg shadow-md"
                 whileHover={{ scale: 1.06, y: -3 }} whileTap={{ scale: 0.96 }}
               >Resume ›</motion.a>
