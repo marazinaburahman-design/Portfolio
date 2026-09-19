@@ -35,12 +35,15 @@ export default function About() {
                 <p className="text-slate-700"><span className="text-indigo-700 font-semibold">Location:</span> <span className="text-slate-600">Kattankudy, Sri Lanka</span></p>
               </div>
               <motion.a
-                href="https://docs.google.com/document/d/1UatLHvv47MeKzKNxSyTy9HiuqPA544erMnHXouvNfsk/edit?pli=1&tab=t.0"
+                href="https://docs.google.com/document/d/1UatlHVv47MeKzNKxSyTy9HiupPA544erMnHXouvNfsk/export?format=pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-8 bg-indigo-700 text-white font-semibold px-7 py-3 rounded-lg shadow-md"
-                whileHover={{ scale: 1.06, y: -3 }} whileTap={{ scale: 0.96 }}
-              >Resume ›</motion.a>
+                whileHover={{ scale: 1.06, y: -3 }}
+                whileTap={{ scale: 0.96 }}
+              >
+                Download Resume
+              </motion.a>
             </MotionReveal>
           </div>
         </div>
