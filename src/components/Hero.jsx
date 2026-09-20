@@ -6,7 +6,12 @@ import TiltCard from './TiltCard'
 import { smoothEase } from './MotionReveal'
 
 export default function Hero() {
-  const typed = useTypewriter('Backend Development')
+  const typed = useTypewriter([
+    'Frontend Developer',
+    'Full Stack Developer',
+    'MERN Stack Developer',
+    'Backend Developer',
+  ])
 
   return (
     <section id="home" className="relative bg-[#F7F7FB] overflow-hidden min-h-screen flex items-center justify-center py-12">
