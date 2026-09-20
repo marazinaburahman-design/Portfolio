@@ -43,11 +43,14 @@ export default function Education() {
 
         {/* Education Cards */}
         <motion.div
-          className="mt-8 md:mt-12 flex flex-col gap-4 md:gap-6"
+          className="mt-8 md:mt-12 flex flex-col gap-5 md:gap-6"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.15 }}
+          viewport={{
+            once: false,
+            amount: 0.15,
+          }}
         >
           {EDUCATION.map((e, index) => (
             <motion.div
@@ -75,13 +78,14 @@ export default function Education() {
               "
             >
 
-              {/* IMAGE - RIGHT SIDE */}
+              {/* IMAGE */}
               <motion.div
                 className="
                   w-full
                   md:w-2/5
-                  h-12
-                   md:h-64
+                  h-52
+                  sm:h-56
+                  md:h-64
                   shrink-0
                   overflow-hidden
                 "
@@ -112,12 +116,22 @@ export default function Education() {
                     w-full
                     h-full
                     object-cover
+                    object-center
                   "
                 />
               </motion.div>
 
-              {/* INFORMATION - LEFT SIDE */}
-              <div className="p-5 md:p-8 flex-grow flex flex-col justify-center">
+              {/* INFORMATION */}
+              <div
+                className="
+                  p-5
+                  md:p-8
+                  flex-grow
+                  flex
+                  flex-col
+                  justify-center
+                "
+              >
 
                 {/* Title */}
                 <motion.h3

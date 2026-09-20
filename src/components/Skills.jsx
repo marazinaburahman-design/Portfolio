@@ -37,7 +37,7 @@ export default function Skills() {
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.12 }}
+              viewport={{ once: false, amount: 0.0001 }}
             >
               {SKILLS.map((skill, i) => (
                 <motion.div
