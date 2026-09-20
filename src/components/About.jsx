@@ -4,7 +4,7 @@ import MotionReveal from './MotionReveal'
 export default function About() {
   return (
     <section id="about" className="w-full bg-white py-20 md:py-32 overflow-hidden">
-      <div className="w-4/5 mx-auto px-4">
+      <div className="w-5/5 md:w-4/5 mx-auto px-4">
         <MotionReveal direction="up">
           <h2 className="font-display text-4xl md:text-5xl font-bold flex items-center gap-3 justify-center mb-16">
             👤 About <span className="text-indigo-700">Me</span>
