@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <motion.header className="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-slate-200" animate={{ boxShadow: scrolled ? '0 10px 30px rgba(15,23,42,.10)' : '0 0 0 rgba(0,0,0,0)' }}>
-      <div className="w-4/5 mx-auto flex items-center justify-between px-6 py-4">
+      <div className="w-4xl md:w-4/5 mx-auto flex items-center justify-between px-6 py-4">
         <motion.a href="#home" className="font-display font-bold text-xl flex items-center gap-2" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
           <motion.span className="w-7 h-7 rounded-md bg-indigo-700 text-white flex items-center justify-center text-xs" whileHover={{ rotate: 12 }}>{'</>'}</motion.span> Abdur Rahman
         </motion.a>

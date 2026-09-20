@@ -25,7 +25,7 @@ export default function Skills() {
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <MotionReveal direction="up" className="flex justify-center items-start gap-4 mb-12 md:mb-20">
           <span className="text-3xl sm:text-4xl md:text-5xl mt-1 shrink-0">👁️</span>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight text-center">
+          <h2 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight text-center">
             Skills <span className="text-white ml-2">&</span> <span className="text-yellow-300 ml-2">Abilities</span>
           </h2>
         </MotionReveal>

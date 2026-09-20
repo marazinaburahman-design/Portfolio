@@ -3,22 +3,22 @@ import MotionReveal, { staggerContainer, staggerItem } from './MotionReveal'
 
 const EDUCATION = [
   {
-    title: 'Bachelor Of Engineering',
-    place: 'Mohamed Institute Of Education & Technology College Trichy',
-    years: '2020-2023 | Completed With 7.8 CGPA',
-    image: '/images/school1.png',
+    title: 'Full Stack Web Development(MERN)',
+    place: 'Marazin Software Solution Kalmunai',
+    years: '2026 Apr - Sep | Completed',
+    image: '/images/mm.png',
   },
   {
-    title: 'Diploma In Mechanical Engineering',
-    place: 'MIET Polytechnic College Trichy',
-    years: '2017-2020 | Completed With 7.2 CGPA',
+    title: 'NVQ Level 4 ICT Technician',
+    place: 'Cultural Hall Kattankudy',
+    years: '2024 Sep - Dec | Completed',
     image: '/images/school2.png',
   },
   {
-    title: 'Secondary School Leaving Certificate',
-    place: 'Punitha Arockia Annai Higher Secondary School',
-    years: '2016-2017 | Completed With 86%',
-    image: '/images/dd.png',
+    title: 'Secondary School Leaving',
+    place: 'Kattankudy Cenral Colledge School',
+    years: '2023 - 2025 | Completed',
+    image: '/images/kjk.png',
   },
 ]
 
@@ -80,8 +80,8 @@ export default function Education() {
                 className="
                   w-full
                   md:w-2/5
-                  h-48
-                  md:h-auto
+                  h-12
+                   md:h-64
                   shrink-0
                   overflow-hidden
                 "

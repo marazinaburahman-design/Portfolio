@@ -75,7 +75,7 @@ export default function Work() {
       id="work"
       className="bg-slate-950 py-60 overflow-hidden"
     >
-      <div className="w-4/5 mx-auto px-6">
+      <div className="w-4xl md:w-4/5 mx-auto px-6">
 
         {/* Section Title */}
         <MotionReveal direction="up">
