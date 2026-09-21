@@ -21,17 +21,29 @@ const SKILLS = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-gradient-to-br from-purple-700 via-purple-600 to-purple-800 py-20 sm:py-24 md:py-32 lg:py-40 min-h-screen overflow-hidden">
+    <section
+      id="skills"
+      className="bg-gradient-to-br from-purple-700 via-purple-600 to-purple-800 py-20 sm:py-24 md:py-32 lg:py-40 min-h-screen overflow-hidden"
+    >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <MotionReveal direction="up" className="flex justify-center items-start gap-4 mb-12 md:mb-20">
-          <span className="text-3xl sm:text-4xl md:text-5xl mt-1 shrink-0">👁️</span>
-          <h2 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight text-center">
-            Skills <span className="text-white ml-2">&</span> <span className="text-yellow-300 ml-2">Abilities</span>
+
+        <MotionReveal
+          direction="up"
+          className="flex justify-center items-start gap-4 mb-12 md:mb-20"
+        >
+          <span className="text-3xl sm:text-4xl md:text-5xl mt-1 shrink-0">
+            👁️
+          </span>
+
+          <h2 className="font-display text-2xl md:text-4xl font-bold text-white leading-tight text-center">
+            Skills <span className="text-white ml-2">&</span>{' '}
+            <span className="text-yellow-300 ml-2">Abilities</span>
           </h2>
         </MotionReveal>
 
         <MotionReveal direction="scale">
           <div className="bg-black/30 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 backdrop-blur-sm border border-purple-500/30">
+
             <motion.div
               className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-5 md:gap-6 lg:gap-7"
               variants={staggerContainer}
@@ -39,31 +51,53 @@ export default function Skills() {
               whileInView="visible"
               viewport={{ once: false, amount: 0.0001 }}
             >
-              {SKILLS.map((skill, i) => (
+
+              {SKILLS.map((skill) => (
                 <motion.div
                   key={skill.name}
                   variants={staggerItem}
-                  whileHover={{ y: -10, scale: 1.08, rotate: i % 2 === 0 ? -2 : 2, borderColor: '#fbbf24' }}
-                  whileTap={{ scale: 0.97 }}
+                  whileHover={{
+                    y: -5,
+                    borderColor: '#fbbf24',
+                  }}
+                  whileTap={{
+                    scale: 0.98,
+                  }}
+                  transition={{
+                    duration: 0.25,
+                  }}
                   className="bg-slate-950/60 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-7 flex flex-col items-center justify-center gap-3 text-white border border-purple-500/30 min-h-[130px] sm:min-h-[145px] md:min-h-[160px] lg:min-h-[170px] cursor-pointer hover:border-yellow-400/60 transition-all"
                 >
-                  <motion.div 
-                    className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center" 
-                    whileHover={{ rotate: [0, -8, 8, 0], scale: 1.15 }}
+
+                  <motion.div
+                    className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 flex items-center justify-center"
+                    whileHover={{
+                      scale: 1.1,
+                    }}
+                    transition={{
+                      duration: 0.2,
+                    }}
                   >
-                    <img 
-                      src={skill.logo} 
-                      alt={skill.name} 
-                      className="h-full w-full object-contain drop-shadow-lg" 
-                      loading="lazy" 
+                    <img
+                      src={skill.logo}
+                      alt={skill.name}
+                      className="h-full w-full object-contain drop-shadow-lg"
+                      loading="lazy"
                     />
                   </motion.div>
-                  <span className="text-xs sm:text-sm lg:text-base font-semibold text-center tracking-tight break-words">{skill.name}</span>
+
+                  <span className="text-xs sm:text-sm lg:text-base font-semibold text-center tracking-tight break-words">
+                    {skill.name}
+                  </span>
+
                 </motion.div>
               ))}
+
             </motion.div>
+
           </div>
         </MotionReveal>
+
       </div>
     </section>
   )

@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { useTypewriter } from '../hooks/useTypewriter'
 import ParticleField from './ParticleField'
 import Social from './Social'
@@ -54,7 +56,7 @@ export default function Hero() {
               whileHover={{ scale: 1.07, y: -3, boxShadow: '0 15px 30px rgba(67,56,202,.28)' }}
               whileTap={{ scale: 0.96 }}
             >
-              About Me ⌄
+             About Me <FontAwesomeIcon icon={faChevronDown} />
             </motion.a>
 
             <motion.div
@@ -63,7 +65,7 @@ export default function Hero() {
               animate="visible"
               variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.6 } } }}
             >
-              {['in', 'gh', 'wa', 'tg', 'ig', '@'].map((label) => <Social key={label} label={label} animated />)}
+              <Social animated />
             </motion.div>
           </motion.div>
 

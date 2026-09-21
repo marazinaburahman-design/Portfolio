@@ -22,6 +22,15 @@ const PROJECTS = [
     codeUrl: 'https://github.com/marazinaburahman-design/Weather-App',
   },
   {
+    name: 'Login System',
+    color: 'from-emerald-700 to-neutral-900',
+    description:
+      'Explore beautiful resorts with interactive features and detailed information.',
+    image: '/images/ll.png',
+    viewUrl: 'https://login-system-umber-pi.vercel.app/',
+    codeUrl: 'https://github.com/marazinaburahman-design/Login-System.git',
+  },
+  {
     name: 'Docgen AI ',
     color: 'from-fuchsia-500 to-slate-900',
     description:
@@ -85,7 +94,7 @@ export default function Work() {
         </MotionReveal>
 
         {/* Projects Grid */}
-        <motion.div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-2 gap-6" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.08 }}>
+        <motion.div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.08 }}>
 
           {PROJECTS.map((p) => (
             <motion.div key={p.name} variants={staggerItem} whileHover={{ y: -10, scale: 1.015 }}>

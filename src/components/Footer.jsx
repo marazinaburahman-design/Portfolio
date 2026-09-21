@@ -18,7 +18,7 @@ export default function Footer() {
         <MotionReveal direction="left" delay={0.12}>
           <h3 className="font-bold text-lg">Contact Info</h3>
           <p className="text-slate-600 text-sm mt-2">📞 +94 772 425 826</p><p className="text-slate-600 text-sm">✉️ rahmannoon12@gmail.com</p><p className="text-slate-600 text-sm">📍 KattanKudy - Sri Lanka</p>
-          <div className="flex gap-2 mt-3"><Social label="in" /><Social label="gh" /><Social label="@" /><Social label="wa" /><Social label="tg" /></div>
+
         </MotionReveal>
       </div>
       <MotionReveal direction="up"><p className="text-center text-slate-400 text-sm mt-10">Designed With ❤️ By Abdur Rahman</p></MotionReveal>
